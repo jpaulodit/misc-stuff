@@ -1,9 +1,11 @@
 # Purpose : Curbside exercise.
 # Author : John Win ( jpaulodit@hotmail.com )
 # Date : 12/12/2015
+# Note : Use python 3 to run file.
 
 from urllib import request, error
 from collections import deque
+from time import sleep
 import json
 
 class curbside():
@@ -23,6 +25,7 @@ class curbside():
 	# method to retrieve a valid session id from site.
 	def __get_sesion_id(self):
 
+		sleep(0.1)
 		resource = 'get-session'
 		url = self.__base_url + resource
 
@@ -95,6 +98,7 @@ class curbside():
 
 	def __get_resource(self, resource):
 
+		sleep(0.1)
 		url = self.__base_url + resource
 		headers = { 'Session' : self.__session_id}
 
@@ -155,6 +159,6 @@ class curbside():
 if __name__ == '__main__':
 
 	c = curbside()
-	c.start('bfs')
+	c.start()
 	print(c.get_secret())
 	print('**** END OF PROGRAM ****')
