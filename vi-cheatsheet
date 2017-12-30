@@ -21,3 +21,7 @@ d --> delete something. operation{motion} (eg d0)
 2d3w --> [count]operation[count]{motion}
 
 . --> repeat previous issued command
+
+p --> paste after cursor from clipboard
+y --> yank/copy
+u --> undo
