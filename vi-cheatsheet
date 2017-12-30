@@ -1,4 +1,17 @@
 VI Cheat sheet
 
-Ctrl+b ---> "page up"
+:set number/nonumber --> toggle line number
+
+Ctrl+b --> "page up"
 Ctrl+f ---> "page down"
+
+w --> move forward 1 word
+b --> move backward 1 word
+
+0 --> beginning of line
+^ --> first character of line (think regex)
+$ --> last character of line (think regex)
+
+gg --> 1st line of file
+ngg --> nth line of file
+:$ --> move to last line of file
